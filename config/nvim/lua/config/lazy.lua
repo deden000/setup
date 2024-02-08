@@ -15,6 +15,9 @@ require("lazy").setup({
     -- { import = "lazyvim.plugins.extras.lang.json" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- import/override with your plugins
+    ---- "gc" to comment visual regions/lines
+    { "numToStr/Comment.nvim" },
+    { "kdheepak/lazygit.nvim" },
     { import = "plugins" },
   },
   defaults = {
