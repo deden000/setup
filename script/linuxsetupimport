@@ -1,0 +1,21 @@
+
+SETUP_PATH=$HOME"/Documents/linuxsetup"
+CONFIG=$SETUP_PATH"/config"
+
+cp $HOME/.config/nvim -r $CONFIG
+
+cp $HOME/.zshrc $CONFIG
+cp $HOME/.config/i3 -r $CONFIG
+cp $HOME/.config/rofi/rofidmenu.rasi $CONFIG
+cp $HOME/.config/picom.conf $CONFIG
+cp $HOME/.config/dunst -r $CONFIG
+
+cp $HOME/Documents/note -r  $SETUP_PATH
+
+cd $SETUP_PATH
+
+git status
+
+git add .
+git commit -m "new"
+git push

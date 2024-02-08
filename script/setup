@@ -1,0 +1,26 @@
+
+echo "Installing base apps ..."
+echo "\n"
+
+yay -S kitty google-chrome discord neovim spotify
+
+yay -S nvm yarn git
+
+yay -S blueman wireless_tools brightnessctl picom htop fontawesomea wireguard
+
+
+
+
+# git clone ? all repo
+mkdir -p $HOME/Documents/projects
+
+
+# auto wireguard config
+
+
+# nvidia
+sudo pacman -S nvidia nvidia-utils nvidia-settings
+
+# zsh
+# oh my zsh
+

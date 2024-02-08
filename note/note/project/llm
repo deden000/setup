@@ -1,0 +1,9 @@
+
+        x pass parentMessageId 
+        x bug stream new chat non streamma, non si vede lo slice []
+
+        - copy 
+        - upvote senza modale 
+        - downvote con modale con modale
+        - edit -> scrivo sulla modale -> annulla salva -> salvo -> chiamata server
+        - modale su delete -> onAfterDelete -> move to new chat

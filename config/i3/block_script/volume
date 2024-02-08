@@ -1,0 +1,13 @@
+value=$(amixer -D pulse sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }')
+
+# if [ "$value" -eq 0 ] ;then
+#     volume_icon=""
+# elif [ "$value" -lt 50 ] ;then
+#     volume_icon=""
+# else
+#     volume_icon=""
+# fi
+
+echo $value
+
+
