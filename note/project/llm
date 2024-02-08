@@ -38,7 +38,7 @@
           x resize none
           x line height 1em
           x autofocus
-          - disable edit and regen on isStreaming
+          >- disable edit and regen on isStreaming
 
         x rename
         x dialog configm on delete conversation
