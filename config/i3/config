@@ -175,10 +175,10 @@ bindsym $mod+Shift+b move up
 bindsym $mod+Shift+o move right
 
 # alternatively, you can use the cursor keys:
-#bindsym $mod+Shift+Left move left
-#bindsym $mod+Shift+Down move down
-#bindsym $mod+Shift+Up move up
-#bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
 
 
 # Resize window with control
@@ -315,6 +315,9 @@ exec --no-startup-id picom -b --config ~/.config/picom.conf
 # may need to run dbus-launch explicitly: 
 #exec --no-startup-id dbus-launch /usr/bin/dunst
 exec --no-startup-id /usr/bin/dunst
+
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # alternative if you installed aside with XFCE4:
 # exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
@@ -344,7 +347,7 @@ exec --no-startup-id /usr/bin/dunst
 #exec --no-startup-id xfce4-clipman
 
 #Polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh &
+exec_always --no-startup-id polibar
 
 ##################
 # floating rules #
@@ -369,7 +372,7 @@ for_window [class="urxvt"] border pixel 1
 
 # move app to specific ws
 
-for_window [class="discord"] move to workspace $ws4
+for_window [class="discord"] move to workspace $ws5
 for_window [class="spotify"] move to workspace $ws5
 
 
@@ -426,10 +429,10 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 #			
 #}
 
-bar {
-	position top
-	status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
-   }
+#bar {
+#	position top
+#	status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
+#   }
 
 #####################################
 # Application menu handled by rofi: #

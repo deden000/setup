@@ -36,3 +36,4 @@ alias rofic="cd $HOME/.config/rofi && nvim ."
 
 alias szshrc="source $HOME/.zshrc"
 alias sctl="systemctl"
+alias vim="nvim"
