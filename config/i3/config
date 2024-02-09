@@ -182,10 +182,10 @@ bindsym $mod+Shift+Right move right
 
 
 # Resize window with control
-bindsym $mod+Control+Left resize shrink width 10 px or 10 ppt
+bindsym $mod+Control+Right resize shrink width 10 px or 10 ppt
 bindsym $mod+Control+Down resize grow height 10 px or 10 ppt
 bindsym $mod+Control+Up resize shrink height 10 px or 10 ppt
-bindsym $mod+Control+Right resize grow width 10 px or 10 ppt
+bindsym $mod+Control+Left resize grow width 10 px or 10 ppt
 
 # split in horizontal orientation
 bindsym $mod+h split h

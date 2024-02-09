@@ -6,12 +6,15 @@ cp $HOME/.config/nvim -r $CONFIG
 
 cp $HOME/.zshrc $CONFIG
 cp $HOME/.config/i3 -r $CONFIG
-cp $HOME/.config/rofi/rofidmenu.rasi $CONFIG
+cp $HOME/.config/rofi/ -r $CONFIG
 cp $HOME/.config/picom.conf $CONFIG
 cp $HOME/.config/dunst -r $CONFIG
 cp $HOME/.config/polybar -r $CONFIG
+cp $HOME/.config/yazi/ -r $CONFIG
 
 cp $HOME/Documents/note -r  $SETUP_PATH
+
+
 
 cd $SETUP_PATH
 

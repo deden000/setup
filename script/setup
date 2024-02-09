@@ -6,7 +6,7 @@ yay -S kitty google-chrome discord neovim spotify
 
 yay -S nvm yarn git
 
-yay -S blueman wireless_tools brightnessctl picom htop fontawesomea wireguard
+yay -S blueman wireless_tools brightnessctl picom htop fontawesomea wireguard polybar
 
 
 
@@ -24,3 +24,5 @@ sudo pacman -S nvidia nvidia-utils nvidia-settings
 # zsh
 # oh my zsh
 
+# terminal file manager
+sudo pacman -S yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide
