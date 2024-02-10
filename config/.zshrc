@@ -20,7 +20,6 @@ alias p="cd $PROJECTS"
 alias d="cd $HOME/Documents"
 alias s="cd $HOME/Documents/linuxsetup"
 alias llm="cd $PROJECTS/llm-react-ui-2024"
-
 #####################################
 # Config files
 #####################################
@@ -40,6 +39,7 @@ alias picomn="nvim $HOME/.config/picom.conf"
 #####################################
 
 alias sctl="systemctl"
+alias lini="s && ./script/linuxsetupimport"
 
 #####################################
 # Power
