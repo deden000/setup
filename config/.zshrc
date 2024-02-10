@@ -37,3 +37,10 @@ alias rofic="cd $HOME/.config/rofi && nvim ."
 alias szshrc="source $HOME/.zshrc"
 alias sctl="systemctl"
 alias vim="nvim"
+
+#####################################
+# Power
+#####################################
+
+alias poff="poweroff"
+alias ssus="systemctl suspend"

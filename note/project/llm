@@ -43,7 +43,33 @@
         x rename
         x dialog configm on delete conversation
         x setting modal
-        >- copy with plugin no clipboard
+        x copy with plugin no clipboard
 
         x REFACTOR - use InputTextArea inside InputTextChat and not the Form.Control
- 
+
+        ---- 
+
+        x suggestion
+          x se 1 solo 1 centro
+          x se 2 sono 2
+          x clicco popolo con il testo 
+          x aggiungo title? + text
+
+        - block generazione -> close sse 
+          - creare un custom event
+          - on stop dispatch close
+          - event.close() 
+          - slice reset 
+          - onCompleted remove listener stop
+          
+          - header vedi figma
+          - btn new conv outside of the closed sidebar
+        - lenguage
+          - add it lang
+
+          # NOTE
+          - base  color       
+          - sidebar-color
+          -  .scss define var and use in scss
+        
+         
