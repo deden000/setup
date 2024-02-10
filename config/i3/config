@@ -67,8 +67,8 @@ bindsym $mod+Shift+r restart
 bindsym F1 exec --no-startup-id ~/.config/i3/scripts/keyhint-2
 
 # brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5-
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 
 # audio
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset 'Master' 5%+
