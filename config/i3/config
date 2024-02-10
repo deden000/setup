@@ -221,11 +221,11 @@ exec --no-startup-id picom -b --config ~/.config/picom.conf
 # Desktop notifications
 # dunst config used ~/.config/dunst/dunstrc
 # set alternative config if needed:
-#exec --no-startup-id /usr/bin/dunst --config ~/.config/dunst/dunstrc
+exec --no-startup-id /usr/bin/dunst --config ~/.config/dunst/dunstrc
 # may need to run dbus-launch explicitly: 
 #exec --no-startup-id dbus-launch /usr/bin/dunst
-exec --no-startup-id /usr/bin/dunst
-
+# exec --no-startup-id /usr/bin/dunst
+#
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # alternative if you installed aside with XFCE4:
@@ -325,7 +325,6 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 
 bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun \
 		-config ~/.config/rofi/rofidmenu.rasi
-
 #bindsym F9 exec --no-startup-id rofi -modi drun -show drun \
 #		-config ~/.config/rofi/rofidmenu.rasi
 

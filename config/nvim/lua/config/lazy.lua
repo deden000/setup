@@ -17,7 +17,17 @@ require("lazy").setup({
     -- import/override with your plugins
     ---- "gc" to comment visual regions/lines
     { "numToStr/Comment.nvim" },
-    { "kdheepak/lazygit.nvim" },
+    { import = "lazyvim.plugins.extras.test.core" },
+    { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.tailwind" },
+    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+    -- { import = "lazyvim.plugins.extras.ui.edgy" },
+    { import = "lazyvim.plugins.extras.linting.eslint" },
+    { import = "lazyvim.plugins.extras.lang.yaml" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
+    { import = "lazyvim.plugins.extras.coding.codeium" },
+    -- { import = "lazyvim.plugins.extras.ui.alpha" },
+    --   { import = "lazyvim.plugins.extras.lsp.none-ls" },
     { import = "plugins" },
   },
   defaults = {

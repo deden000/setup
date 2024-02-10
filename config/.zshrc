@@ -11,7 +11,7 @@ source $ZSH/oh-my-zsh.sh
 #####################################
 
 PROJECTS=$HOME/Documents/projects
-_C=$HOME/.config
+
 #####################################
 # Direction Movement
 #####################################
@@ -19,7 +19,6 @@ _C=$HOME/.config
 alias p="cd $PROJECTS"
 alias d="cd $HOME/Documents"
 alias s="cd $HOME/Documents/linuxsetup"
-alias .c="cd $HOME/.config"
 alias llm="cd $PROJECTS/llm-react-ui-2024"
 
 #####################################
@@ -27,16 +26,20 @@ alias llm="cd $PROJECTS/llm-react-ui-2024"
 #####################################
 
 alias zshrc="nvim $HOME/.zshrc"
-alias i3c="cd $HOME/.config/i3 && nvim ."
-alias rofic="cd $HOME/.config/rofi && nvim ."
+alias szshrc="source $HOME/.zshrc"
+
+alias i3n="cd $HOME/.config/i3 && nvim ."
+alias rofin="cd $HOME/.config/rofi && nvim ."
+alias nvimn="cd $HOME/.config/nvim && nvim ."
+alias polyn="cd $HOME/.config/polybar && nvim ."
+alias kittyn="cd $HOME/.config/kitty && nvim ."
+alias picomn="nvim $HOME/.config/picom.conf"
 
 #####################################
 # Utils
 #####################################
 
-alias szshrc="source $HOME/.zshrc"
 alias sctl="systemctl"
-alias vim="nvim"
 
 #####################################
 # Power
@@ -44,3 +47,5 @@ alias vim="nvim"
 
 alias poff="poweroff"
 alias ssus="systemctl suspend"
+
+alias llmn="llm && nvim ."

@@ -17,3 +17,6 @@ rules = [
 	# Multiple openers for a single rule
 	{ name = "*.html", use = [ "browser", "text" ] },
 ]
+
+[manager]
+show_hidden = true
