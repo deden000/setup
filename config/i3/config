@@ -152,11 +152,11 @@ bindsym $mod+Shift+n workspace $ws4 exec kitty nvim $HOME/Documents/note
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1 Web"
-set $ws2 "2 Dev"
-set $ws3 "3 Terminal"
-set $ws4 "4 Note"
-set $ws5 "5 Other"
+set $ws1 "1 Web "
+set $ws2 "2 Dev "
+set $ws3 "3 Term "
+set $ws4 "4 Note "
+set $ws5 "5 Other "
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
