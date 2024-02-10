@@ -1,8 +1,10 @@
-return {
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      autoformat = false,
-    },
-  },
-}
+-- return {
+--   {
+--     "neovim/nvim-lspconfig",
+--     opts = {
+--       autoformat = false,
+--     },
+--   },
+-- }
+--
+vim.g.autoformat = false

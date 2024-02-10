@@ -7,7 +7,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 #####################################
-# Var
+# var
 #####################################
 
 PROJECTS=$HOME/Documents/projects
@@ -39,7 +39,7 @@ alias picomn="nvim $HOME/.config/picom.conf"
 #####################################
 
 alias sctl="systemctl"
-alias lini="s && ./script/linuxsetupimport"
+alias lsi="s && ./script/linuxsetupimport"
 
 #####################################
 # Power
@@ -47,5 +47,9 @@ alias lini="s && ./script/linuxsetupimport"
 
 alias poff="poweroff"
 alias ssus="systemctl suspend"
+#
+#####################################
+# Projects
+#####################################
 
 alias llmn="llm && nvim ."
