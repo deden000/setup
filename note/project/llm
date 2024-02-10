@@ -56,14 +56,15 @@
           x aggiungo title? + text
 
         - block generazione -> close sse 
-          - creare un custom event
-          - on stop dispatch close
-          - event.close() 
-          - slice reset 
+          x creare un custom event
+          x on stop dispatch close
+          x event.close() 
+          >- slice reset 
           - onCompleted remove listener stop
           
           - header vedi figma
           - btn new conv outside of the closed sidebar
+
         - lenguage
           - add it lang
 

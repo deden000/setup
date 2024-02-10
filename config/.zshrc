@@ -33,6 +33,7 @@ alias nvimn="cd $HOME/.config/nvim && nvim ."
 alias polyn="cd $HOME/.config/polybar && nvim ."
 alias kittyn="cd $HOME/.config/kitty && nvim ."
 alias picomn="nvim $HOME/.config/picom.conf"
+alias dunstn="cd $HOME/.config/dunst && nvim ."
 
 #####################################
 # Utils
