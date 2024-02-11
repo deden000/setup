@@ -24,6 +24,9 @@ brightnessctl set 100%
 # bluetooth
 blueman-manager
 
+# add this to polybar and hide on click
+uptime | awk '{print $3}' | sed 's/,//'
+
 
 
 /usr/share/bumblebee-status/themes
