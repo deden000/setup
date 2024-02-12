@@ -9,7 +9,7 @@
         - add it lang
         - typing on rtk
 
-        x onError onStop => gestire come fosse final
+        - onError onStop => gestire come fosse final
 
         - base color       
         - sidebar-color
