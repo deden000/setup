@@ -1,83 +1,21 @@
 
-        x pass parentMessageId 
-        x bug stream new chat non streamma, non si vede lo slice []
-
-        x copy 
-        x upvote senza modale 
-        x downvote con modale con modale
         
-        x Si deve allargare quando vado giù
-        x Pulsante in basso a destra
-        x Vedi libre chat, plugin autosize
-        x Si deve alzare fino a una certa, cimdeve essere una max height
-        x E scrolla
-        x  Edit, in pagina con msg, con slice uuid del messaggio, text area o div editable
-
-        x Textarea non deve avere bordi deve essere nascosto vedi  > openAi modifica
-        Sopra div editable> value content HTML
-        Deve funzionare come chat-gpt
-
-        x Salva il messaggio invalido la cache invalidateCache, metti il pulsante
-        Annulla esce edit
-        Salva cambia
-        Salva e rigenera cambia e log rigenera
-
-        - copy con il plugin
-
-        - modal downvote not same value
-
-        - levare upvote al re click
-        
-        x vote == null
-            annulla e invia
-        x thumb == down
-            annulla elimina invia
-        
-
-        -textarea edit autoresize
-          x resize none
-          x line height 1em
-          x autofocus
-          >- disable edit and regen on isStreaming
-
-        x rename
-        x dialog configm on delete conversation
-        x setting modal
-        x copy with plugin no clipboard
-
-        x REFACTOR - use InputTextArea inside InputTextChat and not the Form.Control
-
-        ---- 
-
-        x suggestion
-          x se 1 solo 1 centro
-          x se 2 sono 2
-          x clicco popolo con il testo 
-          x aggiungo title? + text
-
-        - block generazione -> close sse 
-          x creare un custom event
-          x on stop dispatch close
-          x event.close() 
-          >- slice reset 
-          - onCompleted remove listener stop
-          
-          - header vedi figma
-          - btn new conv outside of the closed sidebar
-
-        - lenguage
-          - add it lang
-
-          # NOTE
-          - base  color       
-          - sidebar-color
-          -  .scss define var and use in scss
-
-
-        
-        yarn test:type 
-        -check ts
-            - slices -> hook -> component
-            - hook
+        x check ts
+            x slices -> hook -> component
+            x hook
             - utils
             - pages
+
+        - add it lang
+        - typing on rtk
+
+        x onError onStop => gestire come fosse final
+
+        - base color       
+        - sidebar-color
+        - .scss define var and use in scss
+
+
+        -? add color from server adding new :root
+
+
