@@ -20,6 +20,8 @@ alias p="cd $PROJECTS"
 alias d="cd $HOME/Documents"
 alias s="cd $HOME/Documents/linuxsetup"
 alias llm="cd $PROJECTS/llm-react-ui-2024"
+alias .p="cd $PROJECTS/.private"
+
 #####################################
 # Config files
 #####################################
