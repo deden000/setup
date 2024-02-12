@@ -72,5 +72,12 @@
           - base  color       
           - sidebar-color
           -  .scss define var and use in scss
+
+
         
-         
+        yarn test:type 
+        -check ts
+            - slices -> hook -> component
+            - hook
+            - utils
+            - pages
