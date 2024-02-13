@@ -12,9 +12,6 @@ cp $HOME/.config/dunst -r $CONFIG
 cp $HOME/.config/polybar -r $CONFIG
 cp $HOME/.config/yazi/ -r $CONFIG
 
-cp $HOME/Documents/note -r  $SETUP_PATH
-
-
 
 cd $SETUP_PATH
 
