@@ -68,7 +68,7 @@ toggle_scan() {
 	fi
 }
 
-# Checks if controller is able to pair to devices
+# Checks if controller is able to p#air to devices
 pairable_on() {
 	if bluetoothctl show | grep -q "Pairable: yes"; then
 		echo "Pairable: on"
@@ -134,28 +134,28 @@ toggle_connection() {
 }
 
 # Checks if a device is paired
-device_paired() {
-	device_info=$(bluetoothctl info "$1")
-	if echo "$device_info" | grep -q "Paired: yes"; then
-		echo "Paired: yes"
-		return 0
-	else
-		echo "Paired: no"
-		return 1
-	fi
-}
+# device_paired() {
+# 	device_info=$(bluetoothctl info "$1")
+# 	if echo "$device_info" | grep -q "Paired: yes"; then
+# 		echo "Paired: yes"
+# 		return 0
+# 	else
+# 		echo "Paired: no"
+# 		return 1
+# 	fi
+# }
 
 # Toggles device paired state
-toggle_paired() {
-	if device_paired "$1"; then
-		bluetoothctl remove "$1"
-		device_menu "$device"
-	else
-		bluetoothctl pair "$1"
-		device_menu "$device"
-	fi
-}
-
+# toggle_paired() {
+# 	if device_paired "$1"; then
+# 		bluetoothctl remove "$1"
+# 		device_menu "$device"
+# 	else
+# 		bluetoothctl pair "$1"
+# 		device_menu "$device"
+# 	fi
+# }
+#
 # Checks if a device is trusted
 device_trusted() {
 	device_info=$(bluetoothctl info "$1")
@@ -266,11 +266,11 @@ show_menu() {
 
 		# Get controller flags
 		scan=$(scan_on)
-		pairable=$(pairable_on)
-		discoverable=$(discoverable_on)
+		# pairable=$(pairable_on)
+		# discoverable=$(discoverable_on)
 
 		# Options passed to rofi
-		options="$devices\n$divider\n$power\n$scan\n$pairable\n$discoverable\nExit"
+		options="$devices\n$divider\n$power\n$scan\nExit"
 	else
 		power="Power: off"
 		options="$power\nExit"
@@ -290,12 +290,12 @@ show_menu() {
 	"$scan")
 		toggle_scan
 		;;
-	"$discoverable")
-		toggle_discoverable
-		;;
-	"$pairable")
-		toggle_pairable
-		;;
+	# "$discoverable")
+	# 	toggle_discoverable
+	# 	;;
+	# "$pairable")
+	# 	toggle_pairable
+	# 	;;
 	*)
 		device=$(bluetoothctl devices | grep "$chosen")
 		# Open a submenu if a device is selected
