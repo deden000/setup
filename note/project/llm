@@ -3,13 +3,13 @@
         x check ts
             x slices -> hook -> component
             x hook
-            - utils
-            - pages
+            x utils
+            x pages
 
         - add it lang
-        - typing on rtk
+        -+ typing on rtk
 
-        - onError onStop => gestire come fosse final
+        - to try -  onError onStop => gestire come fosse final
 
         - base color       
         - sidebar-color

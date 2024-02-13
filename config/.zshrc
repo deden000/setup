@@ -43,6 +43,7 @@ alias dunstn="cd $HOME/.config/dunst && nvim ."
 
 alias sctl="systemctl"
 alias lsi="s && ./script/linuxsetupimport"
+alias discord="$HOME/Discord/Discord &"
 
 #####################################
 # Power
