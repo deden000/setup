@@ -10,7 +10,6 @@ cp $HOME/.config/rofi/ -r $CONFIG
 cp $HOME/.config/picom.conf $CONFIG
 cp $HOME/.config/dunst -r $CONFIG
 cp $HOME/.config/polybar -r $CONFIG
-cp $HOME/.config/yazi/ -r $CONFIG
 
 
 cd $SETUP_PATH
