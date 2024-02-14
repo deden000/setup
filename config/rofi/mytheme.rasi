@@ -4,6 +4,19 @@
  * Theme Repo           : https://github.com/lr-tech/rofi-themes-collection
  *******************************************************************************/
 
+  
+
+* {
+    bg0:    #212121F2;
+    bg1:    #2A2A2A;
+    bg2:    #3D3D3D80;
+    bg3:    #7AA2F7FF;
+    fg0:    #E6E6E6;
+    fg1:    #FFFFFF;
+    fg2:    #969696;
+    fg3:    #3D3D3D;
+}
+
 * {
     font:   "FiraCodeNerdFont 13";
 
@@ -18,8 +31,7 @@
 window {
     location:       center;
     width:          600;
-    border-radius:  2px;
-    
+    border-radius:  10px;
     background-color:   @bg0;
 }
 

@@ -336,10 +336,10 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 
 ## rofi bindings fancy application menu ($mod+d /F9 optional disabled)
 
-bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun \
-		-config ~/.config/rofi/rounded-nord-dark.rasi
+bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun -show-icons\
+		-config ~/.config/rofi/squared-everforest.rasi
 
 
-bindsym $mod+w exec --no-startup-id rofi -show window \
-		-config ~/.config/rofi/rounded-nord-dark.rasi
+bindsym $mod+w exec --no-startup-id rofi -show window -show-icons\
+		-config ~/.config/rofi/squared-everforest.rasi
 

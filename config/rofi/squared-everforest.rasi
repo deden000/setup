@@ -5,17 +5,16 @@
  *******************************************************************************/
 
 * {
-    font:   "FiraCode Nerd Font Medium 12";
+    font:   "FiraCodeNerdFont Medium 12";
 
     bg0:     #2B3339;
     bg1:     #323D43;
     fg0:     #D3C6AA;
 
-    accent-color:     #A7C080;
-    urgent-color:     #DBBC7F;
+    accent-color:     #F0C674;
+    urgent-color:     #F55442;
 
     background-color:   transparent;
-    text-color:         @fg0;
 
     margin:     0;
     padding:    0;
@@ -24,7 +23,7 @@
 
 window {
     location:   center;
-    width:      480;
+    width:      600;
 
     background-color:   @bg0;
 }
@@ -63,7 +62,7 @@ element {
 }
 
 element normal normal {
-    text-color: @fg0;
+    text-color: #333333;
 }
 
 element normal urgent {
@@ -74,12 +73,9 @@ element normal active {
     text-color: @accent-color;
 }
 
-element selected {
-    text-color: @bg0;
-}
-
 element selected normal, element selected active {
     background-color:   @accent-color;
+    text-color: #333333;
 }
 
 element selected urgent {
@@ -87,7 +83,7 @@ element selected urgent {
 }
 
 element-icon {
-    size:   0.8em;
+    size:   1em;
 }
 
 element-text {
