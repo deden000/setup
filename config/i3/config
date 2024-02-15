@@ -14,7 +14,7 @@ bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 # switch to workspace
-bindsym $mod+0    workspace  $ws0
+bindsym $mod+0   workspace  $ws0
 bindsym $mod+1    workspace  $ws1
 bindsym $mod+2    workspace  $ws2
 bindsym $mod+3    workspace  $ws3
@@ -212,7 +212,7 @@ exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill /home/den/Pictures/sunset2.jpg
+exec --no-startup-id sleep 1 && feh --bg-fill /home/den/Pictures/ghosty.jpg
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
@@ -268,27 +268,23 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # clipman-applet
 #exec --no-startup-id xfce4-clipman
 
-#Polybar
-exec_always --no-startup-id polibar
-
 ##################
 # floating rules #
 ##################
 
 # set floating (nontiling) for apps needing it
-for_window [class="Yad" instance="yad"] floating enable
-for_window [class="Galculator" instance="galculator"] floating enable
-for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
-
+# for_window [class="Yad" instance="yad"] floating enable
+# for_window [class="Galculator" instance="galculator"] floating enable
+# for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 # set floating (nontiling) for special apps
-for_window [class="Xsane" instance="xsane"] floating enable
-for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
-for_window [class="qt5ct" instance="qt5ct"] floating enable
-for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
-for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
-for_window [class="Pamac-manager"] floating enable
-for_window [window_role="About"] floating enable
-for_window [class="Blueman-manager" instance="blueman-manager"] floating enable
+# for_window [class="Xsane" instance="xsane"] floating enable
+# for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
+# for_window [class="qt5ct" instance="qt5ct"] floating enable
+# for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
+# for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
+# for_window [class="Pamac-manager"] floating enable
+# for_window [window_role="About"] floating enable
+# for_window [class="Blueman-manager" instance="blueman-manager"] floating enable
 # set border of floating window
 for_window [class="urxvt"] border pixel 1
 
