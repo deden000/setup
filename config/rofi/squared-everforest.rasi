@@ -14,7 +14,6 @@
     accent-color:     #A289F5;
     urgent-color:     #F55442;
 
-    background-color:   transparent;
 
     margin:     0;
     padding:    0;
@@ -52,25 +51,17 @@ listview {
     padding:    4px 0;
     lines:      8;
     columns:    1;
-
-    fixed-height:   false;
 }
 
 element {
     padding:    8px;
     spacing:    8px;
-}
-
-element normal normal {
-    text-color: #333333;
+    text-color: #ffffff;
+    background-color: #ffffff;
 }
 
 element normal urgent {
     text-color: @urgent-color;
-}
-
-element normal active {
-    text-color: @accent-color;
 }
 
 element selected normal, element selected active {
@@ -86,6 +77,3 @@ element-icon {
     size:   1em;
 }
 
-element-text {
-    text-color: inherit;
-}

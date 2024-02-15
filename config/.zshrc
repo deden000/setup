@@ -58,3 +58,10 @@ alias ssus="systemctl suspend"
 #####################################
 
 alias llmn="llm && nvim ."
+
+
+
+
+
+
+eval "$(zoxide init zsh)"

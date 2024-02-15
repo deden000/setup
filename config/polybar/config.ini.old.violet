@@ -18,10 +18,10 @@
 
 [colors]
 background = #222222
-background-alt = #73fff3
+background-alt = #a289f5
 foreground = #C5C8C6
 
-primary = #73fff3
+primary = #a289f5
 secondary = #8ABEB7
 alert = #f54242
 disabled = #707880
@@ -33,12 +33,13 @@ radius = 5
 
 dpi = 96
 
+
 background = ${colors.background}
 foreground = ${colors.foreground}
 
 line-size = 1
-border-size = 2px
-border-color = #73fff3
+border-size = 1pt
+border-color = #a289f5
 
 padding-left = 2
 padding-right = 2
@@ -95,7 +96,7 @@ label = %title:0:20:...%
 [module/wlan]
 inherit = network-base
 interface-type = wireless
-label-connected = %{F#73fff3}  %essid%
+label-connected = %{F#a289f5}  %essid%
 label-foreground = ${colors.primary}
 format-foreground = ${colors.primary}
 
@@ -185,11 +186,11 @@ use-actual-brightness = true
 poll-interval = 0
 scroll-interval = 10
 format = <label>
-label = %{F#73fff3}Bright %{F#CCCCCC}%percentage%%
+label = %{F#a289f5}Bright %{F#CCCCCC}%percentage%%
 
 [module/powermenu]
 type = custom/text
-content = %{F#73fff3}
+content = %{F#a289f5}
 click-left = ~/.config/rofi/rofi-powermenu.sh
 cursor-click = pointer
 ; click-right = powermenu_t1
@@ -197,7 +198,7 @@ cursor-click = pointer
 
 ; [module/bluetooth]
 ; type = custom/text
-; content = %{F#73fff3}
+; content = %{F#a289f5}
 ; click-left = ~/.config/rofi/rofi-bluetooth.sh
 ; cursor-click = pointer
 ; ; click-right = powermenu_t1

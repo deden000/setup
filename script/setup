@@ -4,8 +4,10 @@ echo "\n"
 
 yay -S kitty google-chrome discord neovim spotify
 
-yay -S nvm yarn git
+yay -S nvm yarn git zoxide
 
+# inside .zshrc add eval"$(zoxide init zsh)"
+#
 yay -S blueman wireless_tools brightnessctl picom htop fontawesomea wireguard polybar
 
 
@@ -16,7 +18,6 @@ mkdir -p $HOME/Documents/projects
 
 
 # auto wireguard config
-
 
 # nvidia
 sudo pacman -S nvidia nvidia-utils nvidia-settings

@@ -314,8 +314,8 @@ for_window [class="Blueman-manager"] resize set 640 480
 
 # Define colors variables:
 set $darkbluetrans	#08052be6
-set $darkblue		#08052b
-set $lightblue		#5294e2
+set $darkblue		#2d2d2d
+set $lightblue		#dddddd
 set $urgentred		#e53935
 set $white		#ffffff
 set $black		#000000
