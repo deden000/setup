@@ -43,7 +43,8 @@ alias dunstn="cd $HOME/.config/dunst && nvim ."
 
 alias sctl="systemctl"
 alias lsi="s && ./script/linuxsetupimport"
-alias discord="$HOME/Discord/Discord"
+alias note="cd $HOME/Documents/note/ && nvim ."
+alias mirrors="sudo reflector --verbose --latest 5 --country 'Italy' --age 6 --sort rate --save /etc/pacman.d/mirrorlist"
 
 #####################################
 # Power
@@ -51,7 +52,7 @@ alias discord="$HOME/Discord/Discord"
 
 alias poff="poweroff"
 alias ssus="systemctl suspend"
-#
+
 #####################################
 # Projects
 #####################################
