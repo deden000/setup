@@ -24,7 +24,7 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = 300
+    width = 500
 
     # The maximum height of a single notification, excluding the frame.
     height = 300
@@ -111,7 +111,7 @@
 
     ### Text ###
 
-    font = FiraCodeNerdFontMono 13
+    font = FiraCodeNerdFontMono 11
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -441,11 +441,11 @@ separator_color= frame
 
 [urgency_low]
 background = "#232f36"
-foreground = "#d9d9d9"
+foreground = "#ffffff"
 
 [urgency_normal]
 background = "#232f36"
-foreground = "#d9d9d9"
+foreground = "#ffffff"
 frame_color = "#d2d2d2"
 
 [urgency_critical]
