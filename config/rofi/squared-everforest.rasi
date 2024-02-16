@@ -8,11 +8,9 @@
     font:   "FiraCodeNerdFont SemiBold 11";
 
     bg0:     #2B3339;
-    bg1:     #323D43;
+    bg1:     #333333;
 
-    accent-color: #fc7049;
-    urgent-color: #F55442;
-
+    accent-color: #F0C674;
 
     margin:     0;
     padding:    0;
@@ -21,7 +19,7 @@
 
 window {
     location:   center;
-    width:      800;
+    width:      500;
 
     background-color:   @bg0;
 }
@@ -44,19 +42,19 @@ textbox {
 }
 
 listview {
-    padding:    4px 0;
-    lines:      8;
-    columns:    2;
+    padding:    4px;
+    lines:      10;
+    columns:    1;
 }
 
 element {
-    padding: 8px;
-    margin: 2px;
+    padding: 6px;
+    margin: 1px;
 
-    border-radius: 4px;
-    text-color: #333;
+    border-radius: 2px;
+    text-color: #333333;
 
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 element selected normal {
@@ -65,7 +63,7 @@ element selected normal {
 }
 
 element-icon {
-    size: 2em;
+    size: 1.5em;
     margin-right: 4px;
 }
 
