@@ -6,4 +6,4 @@ case "$chosen" in
 " Restart") reboot ;;
 "󰤄 Suspend") systemctl suspend ;;
 *) exit 1 ;;
-esac
+escc

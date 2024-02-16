@@ -294,7 +294,7 @@ for_window [class="discord"] move to workspace $ws0
 for_window [class="Spotify"] move to workspace $ws0
 for_window [class="Google-chrome"] move to workspace $ws1
 for_window [class="code"] move to workspace $ws2
-for_window [class="kitty"] move to workspace $ws3
+# for_window [class="kitty"] move to workspace $ws3
 
 for_window [class="Blueman-manager"] resize set 640 480
 # set size of floating window
@@ -302,7 +302,7 @@ for_window [class="Blueman-manager"] resize set 640 480
 #for_window [class=".*"] resize set 640 480 #to change size of all floating windows 
 
 # set position of floating window
-#for_window [class=".*"] move position center
+for_window [class=".*"] move position center
 
 ######################################
 # color settings for bar and windows #

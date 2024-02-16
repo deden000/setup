@@ -44,6 +44,7 @@ alias dunstn="cd $HOME/.config/dunst && nvim ."
 alias sctl="systemctl"
 alias lsi="s && ./script/linuxsetupimport"
 alias note="cd $HOME/Documents/note/ && nvim ."
+alias pnote="cd $HOME/Documents/note/project/ && nvim ."
 alias mirrors="sudo reflector --verbose --latest 5 --country 'Italy' --age 6 --sort rate --save /etc/pacman.d/mirrorlist"
 
 #####################################
@@ -61,7 +62,8 @@ alias llmn="llm && nvim ."
 
 
 
-
+alias vpnu="wg-quick up fater"
+alias vpnd="wg-quick down fater"
 
 
 eval "$(zoxide init zsh)"
