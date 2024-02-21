@@ -166,7 +166,7 @@ bindsym $mod+w exec --no-startup-id rofi -show window  -show-icons -theme ~/.con
 
 bindsym $mod+Shift+b exec --no-startup-id exec blueman-manager
 bindsym $mod+Shift+e exec $HOME/.config/rofi/scripts/powermenu.sh
-
+bindsym $mod+Shift+p exec poweroff
 #############################################
 # autostart applications/services on login: #
 #############################################
