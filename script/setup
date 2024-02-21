@@ -2,28 +2,26 @@
 echo "Installing base apps ..."
 echo "\n"
 
-yay -S kitty google-chrome discord neovim spotify
+yay -S kitty google-chrome discord neovim spotify zsh nvm yarn git zoxide blueman wireless_tools brightnessctl picom htop fontawesome wireguard polybary
 
-yay -S nvm yarn git zoxide
-
-# inside .zshrc add eval"$(zoxide init zsh)"
-#
-yay -S blueman wireless_tools brightnessctl picom htop fontawesomea wireguard polybar
+# nvidia
+sudo pacman -S nvidia nvidia-utils nvidia-settings
 
 
+echo "eval'$(zoxide init zsh)" >> $HOME/.zshrc
 
+
+# auto wireguard config
+sudo cat ../fater.conf > /etc/wirguard/fater.conf 
+
+
+# zsh
+# oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # git clone ? all repo
 mkdir -p $HOME/Documents/projects
 
 
-# auto wireguard config
-
-# nvidia
-sudo pacman -S nvidia nvidia-utils nvidia-settings
-
-# zsh
-# oh my zsh
-
-# terminal file manager
-sudo pacman -S yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide
+# copy config files
+cp -r ../config/* $HOME/.config/
