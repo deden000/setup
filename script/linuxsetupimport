@@ -1,5 +1,5 @@
 
-SETUP_PATH=$HOME"/Documents/linuxsetup"
+SETUP_PATH=$HOME"/Documents/setup"
 CONFIG=$SETUP_PATH"/config"
 
 cp $HOME/.config/nvim -r $CONFIG

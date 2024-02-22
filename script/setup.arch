@@ -1,0 +1,39 @@
+
+echo "Installing base packages ...."
+
+# app
+yay -S google-chrome discord spotify
+# specific
+yay -S zsh nvm yarn git 
+# linux
+yay -S kitty neovim wireguard-tools wireless_tools blueman  brightnessctl picom htop fontawesome  polybar zoxide
+
+
+
+echo "Installing nvidia"
+sudo pacman -S nvidia nvidia-utils nvidia-settings
+
+echo "auto wireguard config"
+sudo cat ../fater.conf > /etc/wireguard/fater.conf 
+
+
+# copy config files
+cp -r ../config/* $HOME/.config/
+
+# copy local file
+cp local/* $HOME -r
+
+echo "start cloning rrdl repo"
+
+mkdir -p $HOME/Documents/projects
+cd $HOME/Documents/projects/
+
+git clone git@gitlab.reissdigitallife.eu:reiss-digital-life/llm/llm-react-ui-2024.git
+git clone git@gitlab.reissdigitallife.eu:maenoox/maenoox-nextjs-2024.git
+
+
+echo "start cloning rrdl repo"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+echo "zoxide conf in .zshrc"
+echo "eval'$(zoxide init zsh)" >> $HOME/.zshrc
