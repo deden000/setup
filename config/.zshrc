@@ -67,3 +67,8 @@ alias vpnd="wg-quick down fater"
 
 
 eval "$(zoxide init zsh)"
+
+
+
+alias sshmy="rm -rf .ssh && cp .ssh-my .ssh -r"
+alias sshrrdl="rm -rf .ssh && cp .ssh-rrdl .ssh -r"
