@@ -2,11 +2,11 @@
 echo "Installing base packages ...."
 
 # app
-sudo dfn install google-chrome discord spotify
+sudo dnf install google-chrome discord spotify
 # specific
-sudo dfn install zsh nvm yarn git 
+sudo dnf install zsh nvm yarn git 
 # linux
-sudo dfn install kitty neovim wireguard-tools wireless_tools blueman brightnessctl picom htop fontawesome  polybar zoxide
+sudo dnf install kitty neovim wireguard-tools wireless_tools blueman brightnessctl picom htop fontawesome  polybar zoxide
 
 
 echo "auto wireguard config"
