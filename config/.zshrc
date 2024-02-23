@@ -68,7 +68,10 @@ alias vpnd="wg-quick down fater"
 
 eval "$(zoxide init zsh)"
 
-
+# WORK
 
 alias sshmy="rm -rf .ssh && cp .ssh-my .ssh -r"
 alias sshrrdl="rm -rf .ssh && cp .ssh-rrdl .ssh -r"
+
+alias yrb="yarn run build"
+alias yrd="yarn run dev"

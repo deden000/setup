@@ -50,3 +50,11 @@ systemctl enable bluetooth
 #        Driver "libinput"
 #        Option "NaturalScrolling" "True"
 #EndSection
+#
+#
+#
+#
+# virtualization
+#sudo pacman -S qemu-full virt-manager virt-viewer dnsmasq bridge-utils libguestfs ebtables vde2 openbsd-netcat
+
+# https://www.makeuseof.com/how-to-install-arch-linux-kvm-configure-virtual-machine/
