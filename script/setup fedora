@@ -1,20 +1,26 @@
 
-echo "Installing base apps ...."
+echo "Installing base packages ...."
 
-dnf install kitty google-chrome discord neovim spotify zsh nvm yarn git zoxide blueman wireless_tools brightnessctl picom htop fontawesome wireguard polybar
+# app
+sudo dfn install google-chrome discord spotify
+# specific
+sudo dfn install zsh nvm yarn git 
+# linux
+sudo dfn install kitty neovim wireguard-tools wireless_tools blueman brightnessctl picom htop fontawesome  polybar zoxide
+
+
 
 echo "Installing nvidia"
-dnf installnvidia nvidia-utils nvidia-settings
+sudo pacman -S nvidia nvidia-utils nvidia-settings
 
 echo "auto wireguard config"
-sudo cat ../fater.conf > /etc/wirguard/fater.conf 
+sudo cat ../fater.conf > /etc/wireguard/fater.conf 
 
 
 # copy config files
 cp -r ../config/* $HOME/.config/
-
-# copy fonts
-cp fonts $HOME/.fonts -r
+# copy local file
+cp local/* $HOME -r
 
 
 echo "start cloning rrdl repo"
@@ -24,6 +30,8 @@ cd $HOME/Documents/projects/
 
 git clone git@gitlab.reissdigitallife.eu:reiss-digital-life/llm/llm-react-ui-2024.git
 git clone git@gitlab.reissdigitallife.eu:maenoox/maenoox-nextjs-2024.git
+git clone git@gitlab.reissdigitallife.eu:maenoox/maenoox-backend.git
+git clone git@gitlab.reissdigitallife.eu:maenoox/maenoox-client-2023.git
 
 
 echo "start cloning rrdl repo"
@@ -31,3 +39,22 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 echo "zoxide conf in .zshrc"
 echo "eval'$(zoxide init zsh)" >> $HOME/.zshrc
+
+
+systemctl enable bluetooth
+
+# /usr/share/X11/xorg.conf.d/40-libinput.conf
+#
+#Section "InputClass"
+#        Identifier "libinput touchpad catchall"
+#        MatchIsTouchpad "on"
+#        MatchDevicePath "/dev/input/event*"
+#        Driver "libinput"
+#        Option "NaturalScrolling" "True"
+#EndSection
+#
+#
+#
+#
+# virtualization
+# https://www.makeuseof.com/how-to-install-arch-linux-kvm-configure-virtual-machine/
