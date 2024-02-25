@@ -1,6 +1,8 @@
 
 echo "Installing base packages ...."
 
+sudo dnf install flatpak
+
 # app
 sudo dnf install google-chrome discord spotify
 # specific
