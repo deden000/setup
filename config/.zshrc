@@ -70,8 +70,8 @@ eval "$(zoxide init zsh)"
 
 # WORK
 
-alias sshmy="rm -rf $HOME/.ssh && cp $HOME/.ssh-my .ssh -r"
-alias sshrrdl="rm -rf $HOME/.ssh && cp $HOME/.ssh-rrdl .ssh -r"
+alias sshusemy="rm -rf $HOME/.ssh && cp $HOME/.ssh-my .ssh -r"
+alias sshuserrdl="rm -rf $HOME/.ssh && cp $HOME/.ssh-rrdl .ssh -r"
 
 alias yrb="yarn run build"
 alias yrd="yarn run dev"
