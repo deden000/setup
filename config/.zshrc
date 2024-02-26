@@ -75,3 +75,7 @@ alias sshuserrdl="rm -rf $HOME/.ssh && cp $HOME/.ssh-rrdl $HOME/.ssh -r"
 
 alias yrb="yarn run build"
 alias yrd="yarn run dev"
+
+
+# virt
+alias enablevt="sudo virsh net-start default"
