@@ -79,3 +79,6 @@ alias yrd="yarn run dev"
 
 # virt
 alias enablevt="sudo virsh net-start default"
+
+
+alias mousebtn="xmodmap -e 'pointer = 3 2 1'"
