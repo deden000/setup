@@ -1,0 +1,60 @@
+
+echo "Installing base packages ...."
+
+sudo apt install zsh kitty git code wireguard npm
+sudo apt install openssh-server
+sudo npm install -g yarn nvm     
+
+sudo apt install docker docker-compose mariadb-client
+
+
+# nvm
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
+# then add the export to .zshrc
+# add to /bin/nvim
+# ~/.var/app/io.neovim.nvim/config/nvim
+
+echo "auto wireguard config"
+sudo cat ../fater.conf > /etc/wireguard/fater.conf 
+
+# copy local file
+cp local/* $HOME -r
+
+echo "start cloning rrdl repo"
+
+mkdir -p $HOME/Documents/projects
+cd $HOME/Documents/projects/
+
+git clone git@gitlab.reissdigitallife.eu:reiss-digital-life/llm/llm-react-ui-2024.git &&
+git clone git@gitlab.reissdigitallife.eu:maenoox/maenoox-nextjs-2024.git && 
+git clone git@gitlab.reissdigitallife.eu:maenoox/maenoox-backend.git && 
+git clone git@gitlab.reissdigitallife.eu:maenoox/maenoox-client-2023.git
+ 
+
+echo "start cloning rrdl repo"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+echo "zoxide conf in .zshrc"
+echo "eval'$(zoxide init zsh)" >> $HOME/.zshrc
+
+
+systemctl enable bluetooth
+
+# /usr/share/X11/xorg.conf.d/40-libinput.conf
+#
+#Section "InputClass"
+#        Identifier "libinput touchpad catchall"
+#        MatchIsTouchpad "on"
+#        MatchDevicePath "/dev/input/event*"
+#        Driver "libinput"
+#        Option "NaturalScrolling" "True"
+#EndSection
+#
+#
+#
+#
+# virtualization
+# https://www.makeuseof.com/how-to-install-arch-linux-kvm-configure-virtual-machine/
+
+
+# vscode font: Menlo, Monaco, 'Courier New', monospace
